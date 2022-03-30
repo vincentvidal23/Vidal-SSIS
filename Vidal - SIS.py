@@ -12,7 +12,7 @@ class Student:
         self.root = root
         blank_space = ""
         self.root.title(200 * blank_space + "Student Information System")
-        self.root.geometry("1350x575+0+0")
+        self.root.geometry("1350x700+0+0")
         self.root.resizable(False,False)
         self.data = dict()
         self.temp = dict()
@@ -148,7 +148,7 @@ class Student:
         MainFrame = Frame(self.root, bd=7, width=1300, height=750, relief=RIDGE, bg="gray")
         MainFrame.grid()
         
-        BotFrame = Frame(MainFrame,  width=1330, height=130, relief=RIDGE,bg="gray")
+        BotFrame = Frame(MainFrame,  width=1330, height=300, relief=RIDGE,bg="gray")
         BotFrame.grid(row=2, column=0)
         
         TitleFrame = Frame(MainFrame, bg="gray", width=1340, height=100, relief=RIDGE)
