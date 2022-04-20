@@ -99,7 +99,9 @@ class Student:
             self.data.pop(id_no, None)
             self.saveData()
             tree.delete(tree.focus())
-            tkinter.messagebox.showinfo("Student Information System","Student Record Deleted Successfully!")
+            deleteData = tkinter.messagebox.askyesno(" Student Information System Warning!","Do you really want to delete this record?")
+            if deleteData > 0:
+                tkinter.messagebox.showinfo("Student Information System","Student Record Deleted Successfully!")
             
         
         
